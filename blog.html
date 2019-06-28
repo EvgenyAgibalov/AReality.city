@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="rus" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Evgeny Agibalov">
+        <meta name="description" content="Areality - история наших городов, которая откроет их по новому. Взгляд через камеру или очки - и вы видите акции магазинов, меню ресторанов, афишу киноцентров прямо с улицы. Areality - первый проект дополненной реальности, внедренной в Курске. Примеры можно посмотреть на сайте!">
+        <meta name="keywords" content="Курск, дополненная реальность, 3D, интерактивная карта">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--  
+    Document Title
+    =============================================
+    -->
+        <title>ARNews - события и факты</title>
+        <!--  
+    Favicons
+    =============================================
+    -->
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!--  
+    Stylesheets
+    =============================================
+    
+    -->
+        <!-- Default stylesheets-->
+        <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Template specific stylesheets-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
+        <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+        <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
+        <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+        <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+        <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+        <!-- Main stylesheet and color file-->
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+    </head>
+    <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60" data-pg-overlay="pexels-photo-834949" data-pg-overlay-gray="0%">
+        <main>
+            <div class="page-loader">
+                <div class="loader">Loading...</div>
+            </div>
+            <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">areality</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="custom-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li> 
+                                <a class="section-scroll" href="#home1">areality</a>
+                            </li>
+                            <li>
+                                <a href="#about" class="section-scroll">кто мы</a>
+                            </li>
+                            <li>
+                                <a href="#services" class="section-scroll">работа</a>
+                            </li>
+                            <li>
+                                <a href="#works" class="section-scroll">портфолио</a>
+                            </li>
+                            <li>
+                                <a href="#alt-features" class="section-scroll">сервис</a>
+                            </li>
+                            <li>
+                                <a href="#team" class="section-scroll">команда</a>
+                            </li>
+                            <li>
+                                <a href="#news" class="section-scroll">новости</a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="section-scroll">контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <section class="home-section bg-dark-30" id="home" data-background="assets/images/section-5.jpg">
+                <div class="video-player" data-property="{videoURL:'https://youtu.be/aGaEZhCZPAg', containment:'.home-section', startAt:20, mute:false, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25}"></div>
+                <div class="video-controls-box">
+</div>
+                <div class="titan-caption">
+                    <div class="caption-content" id="home1">
+                        <h2 class="module-title font-alt mt-50">AREALITY NEWS</h2>
+                        <div class="module-subtitle font-serif">Что случилось за ночь, где открылась виртуальная выставка,
+                            <p>и кто создал себя в 3D. А также&nbsp; - онлайн знаменитости, <br> новая политика и не новый Интернет.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="main">
+                <hr class="divider-w">
+                <hr class="divider-w">
+                <section class="module">
+                    <div class="container">
+                        <div class="row post-masonry post-columns">
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <div class="post">
+                                    <div class="post-thumbnail">
+                                        <a href="#">
+                                            <img src="assets/images/post-1.jpg" alt="Blog-post Thumbnail"/>
+                                        </a>
+                                    </div>
+                                    <div class="post-header font-alt">
+                                        <h2 class="post-title"><a href="#">Our trip to the Alps</a></h2>
+                                        <div class="post-meta">By&nbsp;
+                                            <a href="#">Mark Stone</a>&nbsp;| 23 November | 3 Comments
+                                        </div>
+                                    </div>
+                                    <div class="post-entry">
+                                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                                    </div>
+                                    <div class="post-more">
+                                        <a class="more-link" href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <div class="post">
+                                    <div class="post-thumbnail">
+                                        <a href="#">
+                                            <img src="assets/images/post-masonry-1.jpg" alt="Blog-post Thumbnail"/>
+                                        </a>
+                                    </div>
+                                    <div class="post-header font-alt">
+                                        <h2 class="post-title"><a href="#">Shore after the tide</a></h2>
+                                        <div class="post-meta">By&nbsp;
+                                            <a href="#">Andy River</a>&nbsp;| 11 November | 4 Comments
+                                        </div>
+                                    </div>
+                                    <div class="post-entry">
+                                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                                    </div>
+                                    <div class="post-more">
+                                        <a class="more-link" href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <div class="post">
+                                    <div class="post-thumbnail">
+                                        <a href="#">
+                                            <img src="assets/images/post-5.jpg" alt="Blog-post Thumbnail"/>
+                                        </a>
+                                    </div>
+                                    <div class="post-header font-alt">
+                                        <h2 class="post-title"><a href="#">We in New Zealand</a></h2>
+                                        <div class="post-meta">By&nbsp;
+                                            <a href="#">Dylan Woods</a>&nbsp;| 5 November | 15 Comments
+                                        </div>
+                                    </div>
+                                    <div class="post-entry">
+                                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                                    </div>
+                                    <div class="post-more">
+                                        <a class="more-link" href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <div class="post">
+                                    <div class="post-thumbnail">
+                                        <a href="#">
+                                            <img src="assets/images/post-masonry-2.jpg" alt="Blog-post Thumbnail"/>
+                                        </a>
+                                    </div>
+                                    <div class="post-header font-alt">
+                                        <h2 class="post-title"><a href="#">Plane in the field</a></h2>
+                                        <div class="post-meta">By&nbsp;
+                                            <a href="#">Mark Stone</a>&nbsp;| 23 November | 3 Comments
+                                        </div>
+                                    </div>
+                                    <div class="post-entry">
+                                        <p>A wonderful serenity has&nbsp;</p>
+                                    </div>
+                                    <div class="post-more">
+                                        <a class="more-link" href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <div class="post">
+                                    <div class="post-thumbnail">
+                                        <a href="#">
+                                            <img src="assets/images/post-4.jpg" alt="Blog-post Thumbnail"/>
+                                        </a>
+                                    </div>
+                                    <div class="post-header font-alt">
+                                        <h2 class="post-title"><a href="#">Clock</a></h2>
+                                        <div class="post-meta">By&nbsp;
+                                            <a href="#">Andy River</a>&nbsp;| 11 November | 4 Comments
+                                        </div>
+                                    </div>
+                                    <div class="post-entry">
+                                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                                    </div>
+                                    <div class="post-more">
+                                        <a class="more-link" href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <div class="post">
+                                    <div class="post-thumbnail">
+                                        <a href="#">
+                                            <img src="assets/images/post-3.jpg" alt="Blog-post Thumbnail"/>
+                                        </a>
+                                    </div>
+                                    <div class="post-header font-alt">
+                                        <h2 class="post-title"><a href="#">Lighthouse to the shore</a></h2>
+                                        <div class="post-meta">By&nbsp;
+                                            <a href="#">Dylan Woods</a>&nbsp;| 5 November | 15 Comments
+                                        </div>
+                                    </div>
+                                    <div class="post-entry">
+                                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                                    </div>
+                                    <div class="post-more">
+                                        <a class="more-link" href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <div class="post">
+                                    <div class="post-thumbnail">
+                                        <a href="#">
+                                            <img src="assets/images/post-2.jpg" alt="Blog-post Thumbnail"/>
+                                        </a>
+                                    </div>
+                                    <div class="post-header font-alt">
+                                        <h2 class="post-title"><a href="#">Our trip to the Alps</a></h2>
+                                        <div class="post-meta">By&nbsp;
+                                            <a href="#">Mark Stone</a>&nbsp;| 23 November | 3 Comments
+                                        </div>
+                                    </div>
+                                    <div class="post-entry">
+                                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                                    </div>
+                                    <div class="post-more">
+                                        <a class="more-link" href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <div class="post">
+                                    <div class="post-thumbnail">
+                                        <a href="#">
+                                            <img src="assets/images/post-masonry-1.jpg" alt="Blog-post Thumbnail"/>
+                                        </a>
+                                    </div>
+                                    <div class="post-header font-alt">
+                                        <h2 class="post-title"><a href="#">Shore after the tide</a></h2>
+                                        <div class="post-meta">By&nbsp;
+                                            <a href="#">Andy River</a>&nbsp;| 11 November | 4 Comments
+                                        </div>
+                                    </div>
+                                    <div class="post-entry">
+                                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                                    </div>
+                                    <div class="post-more">
+                                        <a class="more-link" href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <div class="post">
+                                    <div class="post-thumbnail">
+                                        <a href="#">
+                                            <img src="assets/images/post-6.jpg" alt="Blog-post Thumbnail"/>
+                                        </a>
+                                    </div>
+                                    <div class="post-header font-alt">
+                                        <h2 class="post-title"><a href="#">We in New Zealand</a></h2>
+                                        <div class="post-meta">By&nbsp;
+                                            <a href="#">Dylan Woods</a>&nbsp;| 5 November | 15 Comments
+                                        </div>
+                                    </div>
+                                    <div class="post-entry">
+                                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                                    </div>
+                                    <div class="post-more">
+                                        <a class="more-link" href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination font-alt">
+                            <a href="#"><i class="fa fa-angle-left"></i></a>
+                            <a class="active" href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#"><i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </section>
+                <div class="module-small bg-dark">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="widget">
+                                    <h5 class="widget-title font-alt">AREALITY</h5>
+                                    <p>Доступные развлечения в новом стиле города. Все дополнения вы найдете на улицах городах, а также в <a href="file:///C:/Users/%D0%BC%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE/Desktop/Admin/%D0%97%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8/titan/Titan-master/map.html" target="_blank" style="background-color: rgb(17, 17, 17);">AReality.Map</a></p>
+                                    <p>Телефон: +1 234 567 89 10</p>Facebook: +1 234 567 89 10
+                                    <p>Email:<a href="#">somecompany@example.com</a></p>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="widget">
+                                    <h5 class="widget-title font-alt">комментарии</h5>
+                                    <ul class="icon-list">
+                                        <li>Maria on 
+                                            <a href="#">Designer Desk Essentials</a>
+                                        </li>
+                                        <li>John on 
+                                            <a href="#">Realistic Business Card Mockup</a>
+                                        </li>
+                                        <li>Andy on 
+                                            <a href="#">Eco bag Mockup</a>
+                                        </li>
+                                        <li>Jack on 
+                                            <a href="#">Bottle Mockup</a>
+                                        </li>
+                                        <li>Mark on 
+                                            <a href="#">Our trip to the Alps</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="widget">
+                                    <h5 class="widget-title font-alt">темы блога</h5>
+                                    <ul class="icon-list">
+                                        <li>
+                                            <a href="#">Новости - 6</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">3d видео - 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Illustration - 12</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Marketing - 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Wordpress - 16</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="widget">
+                                    <h5 class="widget-title font-alt">популярные посты</h5>
+                                    <ul class="widget-posts">
+                                        <li class="clearfix">
+                                            <div class="widget-posts-image">
+                                                <a href="#">
+                                                    <img src="assets/images/rp-1.jpg" alt="Post Thumbnail"/>
+                                                </a>
+                                            </div>
+                                            <div class="widget-posts-body">
+                                                <div class="widget-posts-title">
+                                                    <a href="#">Designer Desk Essentials</a>
+                                                </div>
+                                                <div class="widget-posts-meta">23 january</div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <div class="widget-posts-image">
+                                                <a href="#">
+                                                    <img src="assets/images/rp-2.jpg" alt="Post Thumbnail"/>
+                                                </a>
+                                            </div>
+                                            <div class="widget-posts-body">
+                                                <div class="widget-posts-title">
+                                                    <a href="#">Realistic Business Card Mockup</a>
+                                                </div>
+                                                <div class="widget-posts-meta">15 February</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="divider-d">
+                <footer class="footer bg-dark">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p class="copyright font-alt">&copy; 2019&nbsp;<a href="#">AREALITY</a>, All Rights Reserved</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="footer-social-links">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                                    <a href="#"><i class="fa fa-skype"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <div class="scroll-up">
+                <a href="#totop"><i class="fa fa-angle-double-up"></i></a>
+            </div>
+        </main>
+        <!--  
+    JavaScripts
+    =============================================
+    -->
+        <script src="assets/lib/jquery/dist/jquery.js"></script>
+        <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="assets/lib/wow/dist/wow.js"></script>
+        <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+        <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
+        <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+        <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
+        <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+        <script src="assets/lib/smoothscroll.js"></script>
+        <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+        <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
